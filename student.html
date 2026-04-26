@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Student Panel</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <span>📊</span> Admin View
+                </a>
+                <a href="student.html" class="nav-link active">
+                    <span>👨‍🎓</span> My Dashboard
+                </a>
+                <a href="#" class="nav-link">
+                    <span>📚</span> My Courses
+                </a>
+                <a href="#" class="nav-link">
+                    <span>📊</span> Grades
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <h1>Student Dashboard</h1>
+                <div class="user-info">
+                    <span>Welcome, Student</span>
+                </div>
+            </header>
+
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <img src="https://ui-avatars.com/api/?name=John+Doe&size=150&background=4F46E5&color=fff" alt="Student Profile">
+                    </div>
+                    <div class="profile-info">
+                        <h2 id="studentProfileName">John Doe</h2>
+                        <p><strong>Student ID:</strong> <span id="studentProfileId">STU001</span></p>
+                        <p><strong>Course:</strong> <span id="studentProfileCourse">Computer Science</span></p>
+                        <p><strong>Email:</strong> <span id="studentProfileEmail">john.doe@university.edu</span></p>
+                        <p><strong>Semester:</strong> <span id="studentProfileSemester">6th Semester</span></p>
+                        <p><strong>Status:</strong> <span class="status-badge active">Active</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Attendance Section -->
+            <div class="attendance-section">
+                <h2>Today's Attendance</h2>
+                <div class="attendance-card">
+                    <p id="attendanceStatus">Status: Not Marked</p>
+                    <p id="attendanceTime"></p>
+                    <button id="markAttendanceBtn" class="btn-primary">Mark Attendance</button>
+                </div>
+            </div>
+
+            <!-- Course List -->
+            <div class="courses-section">
+                <h2>Enrolled Courses</h2>
+                <div class="course-grid" id="courseList">
+                    <!-- Courses will be added here dynamically -->
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="summary-cards">
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <div class="card-content">
+                        <h3>6</h3>
+                        <p>Enrolled Courses</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">✅</div>
+                    <div class="card-content">
+                        <h3>85%</h3>
+                        <p>Attendance</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-content">
+                        <h3>3.7</h3>
+                        <p>GPA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📝</div>
+                    <div class="card-content">
+                        <h3>4</h3>
+                        <p>Assignments Due</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="student.js"></script>
+</body>
+</html>
